@@ -1,0 +1,29 @@
+/* j'ai déclaré trois variables*/
+$colorRed: #ff0000;
+$colorGreen: #10d113;
+$colorPurple: #da53ef;
+
+/*j'ai déclaré une mixin et je l'applique grace à @*include*/
+@mixin flex{
+    display:flex;
+    flex-direction: column;
+   align-items:center;
+}
+a{
+    color: blue;
+}
+a:visited{
+  color: $colorRed;
+}
+a:hover{
+    color: $colorPurple;
+}
+h3{
+    color: $colorGreen;
+}
+.corps ul{
+    @include flex;
+}
+/*j'ai appliqué uniquement un background sur une autre page html*/
+ .box {background: url(https://cdn.pixabay.com/photo/2021/03/03/07/09/background-6064645_1280.jpg);
+}
